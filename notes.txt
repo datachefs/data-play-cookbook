@@ -1,0 +1,5 @@
+NOTES
+
+Easiest way to work with this locally: use a Web server extension in Visual Studio code --  e.g., Microsoft's Live Preview
+https://github.com/microsoft/vscode-livepreview
+
