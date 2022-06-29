@@ -2,4 +2,8 @@ NOTES
 
 Easiest way to work with this locally: use a Web server extension in Visual Studio code --  e.g., Microsoft's Live Preview
 https://github.com/microsoft/vscode-livepreview
+To uuse it, check out the insttructions Above
+Or use the command pallet with the following:
+Live Preview: Show Preview (External Browser)
+(My  voice shortcut: Start server)
 
