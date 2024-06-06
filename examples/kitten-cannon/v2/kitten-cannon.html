@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cannon Firing Doubts</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <img src="kitten-pirate.jpeg" alt="Kitten Pirate" class="kitten-pirate">
+        <div class="cannon-container">
+            <img src="cannon.png" alt="Cannon" class="cannon" onclick="fireCannon()">
+        </div>
+        <div class="doubt-container">
+            <div id="doubt-text">Doubt level 5: "I am not good enough."</div>
+            <svg id="doubt-slab" width="200" height="400">
+                <!-- Example of doubt slab with 5 levels -->
+                <rect id="level1" x="0" y="0" width="200" height="80" fill="gray"></rect>
+                <rect id="level2" x="0" y="80" width="200" height="80" fill="gray"></rect>
+                <rect id="level3" x="0" y="160" width="200" height="80" fill="gray"></rect>
+                <rect id="level4" x="0" y="240" width="200" height="80" fill="gray"></rect>
+                <rect id="level5" x="0" y="320" width="200" height="80" fill="gray"></rect>
+            </svg>
+        </div>
+        <div id="cannonball" class="cannonball"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
