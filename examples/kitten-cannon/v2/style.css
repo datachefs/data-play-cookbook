@@ -23,11 +23,6 @@ body {
     position: relative;
 }
 
-.cannon {
-    height: 100px;
-    cursor: pointer;
-}
-
 .doubt-container {
     position: relative;
     text-align: center;
