@@ -1,7 +1,4 @@
-let currentLevel = 5;
-
 function createCannonSVG() {
-    console.log('here we go')
     const svgNS = "http://www.w3.org/2000/svg";
     const svg = document.createElementNS(svgNS, "svg");
     svg.setAttribute("viewBox", "0 0 400 200");
@@ -46,7 +43,6 @@ function createCannonSVG() {
 }
 
 function fireCannon() {
-    console.log('firing cannon')
     const cannon = document.getElementById('cannon');
     const cannonball = document.createElement('div');
     cannonball.style.width = '20px';
@@ -55,8 +51,8 @@ function fireCannon() {
     cannonball.style.borderRadius = '50%';
     cannonball.style.position = 'absolute';
     cannonball.style.left = '300px';
-    cannonball.style.top = '120px'; // Adjusted to align with the cannon barrel
-
+    cannonball.style.top = '200px';
+    
     document.body.appendChild(cannonball);
 
     cannon.style.animation = 'shake 0.2s';
@@ -70,34 +66,9 @@ function fireCannon() {
         position += 10;
         cannonball.style.left = `${position}px`;
 
-        // Check if cannonball has reached the target
-        const targetLeft = document.querySelector('#doubt').getBoundingClientRect().left;
-        if (position > targetLeft - 20) { // Adjusted distance to match target position
+        if (position > window.innerWidth) {
             clearInterval(interval);
             document.body.removeChild(cannonball);
-            console.log(`Cannonball reached target at position: ${position}px`);
-
-            if (currentLevel > 0) {
-
-                const svgObject = document.getElementById('doubt');
-                    // Get the SVG document inside the <object> element
-                    const svgDoc = svgObject.contentDocument;
-                    console.log('SVG is', svgObject, svgDoc);
-
-
-
-
-                const levelElement = svgDoc.getElementById('level5');
-                if (levelElement) {
-                    console.log(`Hiding level${currentLevel}`);
-                    levelElement.style.visibility = 'hidden';
-                    currentLevel--;
-                } else {
-                    console.log(`Element with id level${currentLevel} not found`);
-                }
-            } else {
-                console.log('All levels already hidden');
-            }
         }
     }, 20);
 }
