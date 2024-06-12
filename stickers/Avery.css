@@ -14,7 +14,7 @@
         height: 1in;
         padding: 0.125in;
         box-sizing: border-box;
-        border: 1px solid transparent; /* Optional for visual reference */
+        border: 1px solid ; /* Optional for visual reference - transparent */
         overflow: hidden;
         text-align: left;
         font-size: 12pt;
