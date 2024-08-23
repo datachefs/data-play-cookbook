@@ -4,7 +4,7 @@
 
  **Export**: Go to `File > Export` and select your desired format (e.g., PNG, JPEG).
 **Area to Export**: In the Export settings, choose the appropriate area to export. Select "Selection without Background" 
-
+Area:bSelection Area
 
 ## Leaves and Flowers
 
